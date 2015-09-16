@@ -8,11 +8,11 @@ A simple WIP(Work In Progress) directive to use with [Ionic Framework](http://io
 Located in `/example` folder
 
 Launch it with:
-1) `git clone https://github.com/eemece2/ionic-buttons-radio.git`
-2) `cd ionic-buttons-radio`
-3) `http-server`
+1. `git clone https://github.com/eemece2/ionic-buttons-radio.git`
+2. `cd ionic-buttons-radio`
+3. `http-server`
     (install it with `npm install http-server -g` in case you don't have it installed)
-4) Navigate to [http://localhost:8080/example](http://localhost:8080/example)
+4. Navigate to [http://localhost:8080/example](http://localhost:8080/example)
     (use the port number shown by http-server)
 
 ## License
