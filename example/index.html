@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Ionic Buttons Radio Example</title>
+        <link rel="stylesheet" href="http://code.ionicframework.com/1.1.0/css/ionic.min.css">
+        <link rel="stylesheet" href="../src/css/ionic-buttons-radio.css">
+    </head>
+
+    <body ng-controller="MainCtrl as ctrl">
+        <div class="bar bar-subheader">
+
+            <h2>Search</h2>
+
+            <form>
+                <div class="list">
+                    <div class="item item-buttons-radio">
+                        <span class="input-label">Open source?</span>
+                        <ionic-buttons-radio model='ctrl.openSource' options='ctrl.options' ></ionic-buttons-radio>
+                    </div>
+                    <div class="item item-buttons-radio">
+                        <span class="input-label">Trending?</span>
+                        <ionic-buttons-radio model='ctrl.trending' options='ctrl.options' ></ionic-buttons-radio>
+                    </div>
+                    <div class="item item-buttons-radio">
+                        <span class="input-label">Time</span>
+                        <ionic-buttons-radio model='ctrl.time' options='ctrl.timeOptions' ></ionic-buttons-radio>
+                    </div>
+                </div>
+            </form>
+
+            <div class="card">
+                <div class="item item-text-wrap">
+                    <p>Open Source?: {{ctrl.openSource}}</p>
+                    <p>Trending?: {{ctrl.trending}}</p>
+                    <p>Time: {{ctrl.time}}</p>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="http://code.ionicframework.com/1.1.0/js/ionic.bundle.min.js"></script>
+        <script src="../src/js/ionic-buttons-radio.directive.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/main.controller.js"></script>
+    </body>
+
+</html>
